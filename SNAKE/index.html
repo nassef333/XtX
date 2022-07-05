@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Snake and Ladder</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<!-- logo -->
+			<a class="site-logo" href="../index.html">
+				<img src="../img/logo.png" alt="">
+			</a>
+			<div class="user-panel">
+				<a href="#">Login / Register</a>
+			</div>
+			<!-- responsive -->
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<!-- site menu -->
+			<nav class="main-menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		<div class='container'>
+			<div class='board-container'>
+				<div class="table">
+					<table id='board'>
+						<img class="img" src="snake.png" alt="">
+					</table>
+				</div>
+				<div class='actions'>
+					<input id='roleDice' type='button' value='Role dice'></input>
+					<input id='reset' type='button' value='Reset game'></input>
+				</div>
+				<div id='results' class='results-container'>
+					<div style="text-align: center;" id="diceResult">Current Dice Result: 0</div>
+					<div id='player1' draggable="true">
+						<div class='header'>Player1 details</div>
+					</div>
+					<div id='player2' draggable="true">
+						<div class='header'>Player2 details</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>© 2022 <span>Ahmed Nassef</span>. All rights reserved.</p>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
