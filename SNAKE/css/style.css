@@ -7,9 +7,10 @@
 .img{
 	position: absolute;
 	width: 100%;
+	height: calc(100vh-table.height);
 	z-index: 1;
 	background-color: #00000000;
-	opacity: 80%;
+	opacity: 100%;
 }
 .main-menu a{
 	color: white;
@@ -58,11 +59,11 @@
 #board {
     width: 100%;
     height: auto;
-    border: 1px solid rgb(255, 174, 0);
+	background-color: #ffffff;
 }
 
 #board tbody {
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 #board tr {
@@ -74,7 +75,6 @@
 	position: relative;
     height: 50px;
     width: 50px;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 #board tr td .position-index {
@@ -122,7 +122,7 @@
 	border: 0;
 	background-color: #ffae00;
 	color: rgb(0, 0, 0);
-cursor: pointer;
+	cursor: pointer;
 }
 td{
 	transition: 0.3s;
@@ -132,18 +132,18 @@ td:hover{
 }
 
 #board td:nth-of-type(even) {
-	background-color: rgb(255, 183, 0);
+	background-color: #999999;
   }
 #board td:nth-of-type(odd) {
-	background-color: rgb(255, 0, 0);
+	background-color: #FFEFBA;
   }
 #board tr:nth-of-type(even)
   td:nth-of-type(even) {
-    background-color: rgb(255, 0, 0);
+    background-color: #FFEFBA;
   }
   #board tr:nth-of-type(even)
   td:nth-of-type(odd) {
-    background-color: rgb(255, 183, 0);
+    background-color: #919191;
   }
 
   .footer{
